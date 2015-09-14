@@ -22,14 +22,15 @@
 			<!-- Each section element contains an individual slide -->
 
 			<!-- Intro slide -->
-			<section class="center" id="start">
+			<section id="start" data-background="images/backdrops/backdrop1.jpg">
 				<br>
 				<h2>Enhancing Oil Recovery</h2>
 				<br>
 				<h4 class="fragment">Using Free Energy Calculations to Help Explain Low-Salinity Enhanced Oil Recovery</h4>
 				<br>
-				<h4>Thomas Underwood</h3>
-				<h4><a href="http://www.dur.ac.uk/thomas.underwood/" target="_blank"> www.dur.ac.uk/thomas.underwood/</a></h4>
+				<h4>Thomas Underwood</h4>
+				<h4><a href="http://www.dur.ac.uk/thomas.underwood/" target="_blank"> www.dur.ac.uk/thomas.underwood</a></h4>
+				<h4>Prof. Chris Greenwell</h4>
 			  <a href="http://www.dur.ac.uk" target="_blank"><img src="images/durham.png" alt="Durham University" width="20%"></a>
 			</section>
 
@@ -52,29 +53,28 @@
 			</section -->
 
 			<!-- The Problem #1: Global energy demand -->
-			<section >
+			<section data-background="images/backdrops/backdrop2.jpg">
 				<h2>Global Energy Demand</h2>
 				<ul>
 					<p class="fragment">By the year 2035 it is predicted that worldwide energy consumption will have increased by approximately 35%.</p>
 					<div class="fragment">
-						<p>Current oil extraction methods only recover a third of the oil within a reservoir.</p>
-				  	<div align="middle"><img src="images/Picture1.png" alt=".." width=23% ></div>
-					</div>
-					<p class="fragment" style="font-size:100%; text-align:center;">Optimizing oil extraction rates is a <b>big</b> problem!</p>
+						<img src="images/Picture1.png" alt=".." width=30% align="right" style="margin:25px 25px"><br>
+						<span style="width: 40%;">Current oil extraction methods only recover a third of the oil within a reservoir.</span>
+					</div><br><br><br>
+					<p class="fragment" style="font-size:100%;">Optimizing oil extraction rates is a <b>big</b> problem!</p>
 				</ul>
 			</section>
 
 			<!-- The solution #1: Enhanced Oil Recovery -->
-			<section >
+			<section>
 				<h2>A Possible Solution...</h2>
 				<p class="fragment">Enhanced oil recovery (EOR) is a technique used to enhance the oil output from a reservoir.</p>
-				<br>
-				<img class="fragment" src="images/Picture2.png" alt="Smiley face" width="48%" style="float: left">
+				<img class="fragment" src="images/Picture2.png" alt="Smiley face" width="48%" style="float: left"><br>
 				<p class="fragment" style="width: 44%; float: right">Using a flooding fluid with lower salinity (compared to sea-water) has been shown to improve oil extraction rates, hence low-salinity EOR.</p>
 			</section>
 
 			<!-- How LowSal EOR works (we think)... -->
-			<section >
+			<section>
 				<section data-transition="none-out">
 					<h2>How we think it works...</h2>
 					<img src="images/Picture3.png" alt="Smiley face" valign="center">
@@ -101,10 +101,19 @@
 				</section>
 			</section>
 
+			<!-- EDL Expansion? -->
+			<!-- section>
+				<h2>The Electric Double Layer</h2>
+				<p>The EDL describes the charge distribution surrounding a charged surface when submerged within an electrolyte.</p>
+				<h4 class="fragment">Atoms are treated classically (i.e. no quantum effects!).</h4>
+				<h4 class="fragment">Iteratively solve $F=ma$.</h4>
+				<iframe class="fragment" data-src="md.js/index.html" height=425px width=610px align="middle"></iframe>
+			</section -->
+
 			<!-- Brief intro to clays -->
 			<section >
 				<h2>A Brief Intro to Clays</h2><br>
-				<img src="images/EDL.jpg" alt="Websocket" width="45%" style="float: left">
+				<img src="images/EDL.jpg" alt="Websocket" width="45%" style="float: left; border:1px solid black;">
         <ul style="width: 50%" style="float: right">
 					<p class="fragment">Clays are layered minerals.</li>
 					<p class="fragment">A single layer is about 1 nm.</li>
@@ -115,87 +124,136 @@
 				</ul>
 			</section>
 
-			<section >
+			<section>
 				<h2>...for example...</h2>
 				<video controls class="stretch" src="videos/vermiculite-video.mp4"></video>
-				<p style="font-size:30%; text-align:center; text-valign:bottom">(http://www.minersoc.org/photo.php?id=149)</p>
+				<div><p class="footer" style="font-size:50%">http://www.minersoc.org/photo.php?id=149</p>
 			</section>
 
 			<!-- Research Questions -->
-			<section >
+			<section>
 				<h2>Research Questions</h2>
 					<p class="fragment">Low-salinity EOR works, but the fundamental mechanisms are not well understood.</p>
 					<ul>
 						<li class="fragment">Can simulations help to improve our understanding of low-salinity EOR?</li>
-						<li class="fragment">Can the simulations help influence future experiments?</li>
+						<li class="fragment">Can we calculate the energy required to release an oil molecule from a mineral surface?</li>
 						<li class="fragment">Can our results help increase future oil extraction rates?</li>
 					</ul>
 			</section>
 
 			<!-- Molecular Dynamics 101 -->
-			<section >
+			<!-- section >
 				<h2>Molecular Dynamics 101</h2>
 				<h4 class="fragment">Atoms are treated classically (i.e. no quantum effects!).</h4>
 				<h4 class="fragment">Iteratively solve $F=ma$.</h4>
 				<iframe class="fragment" data-src="md.js/index.html" height=425px width=610px align="middle"></iframe>
-			</section>
+			</section -->
 
 			<!-- Metadynamics 101 -->
-			<section >
-				<h2>Metadynamics 101</h2>
-				<h4>Used to generate the free energy surface of some arbtirary reaction.</h4>
+			<section>
+				<section>
+					<h2>Metadynamics 101</h2>
+					<img class="stretch" src="images/meta_101/meta1.png" alt="Smiley face" valign="center" style="border:1px solid black;">
+				</section>
+				<section>
+					<h2>Metadynamics 101</h2>
+					<img class="stretch" src="images/meta_101/meta2.png" alt="Smiley face" valign="center" style="border:1px solid black;">
+				</section>
+				<section>
+					<h2>Metadynamics 101</h2>
+					<video controls class="stretch" src="videos/metadynamics.mp4" style="border:1px solid black;"></video>
+				</section>
+				<section>
+					<h2>Metadynamics 101</h2>
+					<img class="stretch" src="images/meta_101/gaussians.png" alt="Smiley face" valign="center" style="border:1px solid black;">
+				</section>
+				<section>
+					<h2>Metadynamics 101</h2>
+					<img class="stretch" src="images/meta_101/comparison.png" alt="Smiley face" valign="center" style="border:1px solid black;">
+				</section>
+			</section>
+
+			<section>
+				<h2>My work so far...</h2>
+				<ul>
+					<li>MD simulations</li>
+					<li>Free energy calculations</li>
+				</ul>
 			</section>
 
 			<!-- Tecnical setup -->
-			<section >
-				<h2>The Setup</h2>
+			<section>
+				<section data-transition="none-out">
+					<h2>Basic MD Setup</h2>
+					<img src="images/setup.png" alt="Smiley face" width="80%">
+				</section>
+				<section data-transition="none">
+					<h2>Basic MD Setup</h2>
+					<img src="images/setup1.png" alt="Smiley face" width="80%">
+				</section>
+				<section data-transition="none">
+					<h2>Basic MD Setup</h2>
+					<img src="images/setup2.png" alt="Smiley face" width="80%">
+				</section>
+				<section data-transition="none">
+					<h2>Basic MD Setup</h2>
+					<img src="images/setup3.png" alt="Smiley face" width="80%">
+				</section>
+			</section>
+			<!-- Results #1: Video of lowsal EOR -->
+			<section>
+				<h2>MD Results</h2>
+				<video controls class="stretch" src="videos/md.mp4" style="border:1px solid black;"></video>
+				<div class="footer"><p style="font-size:50%"><i>T. Underwood et al.</i> (2015) J. Phys. Chem. C.</p></div>
 			</section>
 
-			<!-- Results #1: Video of lowsal EOR -->
-			<section >
-				<h2>Basic MD Result</h2>
-				<video controls class="stretch" src="videos/md.mp4"></video>
-				<p style="font-size:30%; text-align:center; text-valign:bottom">(http://www.minersoc.org/photo.php?id=149)</p>
+			<!-- Metadynamic Setup -->
+			<section>
+				<h2>Metadynamic Setup</h2>
+				<img src="images/setup.png" alt="Smiley face" width="80%">
 			</section>
 
 			<!-- Results #2: The EDL -->
-			<section >
+			<section>
 				<h2>Metadynamic Results</h2><br>
 				<!-- <img data-src="images/fes_animation.gif" alt="" width="45%"> -->
-				<video controls class="stretch" src="videos/fes.mp4"></video>
+				<video controls class="stretch" src="videos/fes.mp4" style="border:1px solid black;"></video>
 			</section>
 
 			<!-- Why dont the simulations mix -->
-			<section >
+			<section>
 				<h2>What's going on?</h2>
-				<img data-src="images/metamin.jpg" alt="" width="80%">
+				<img data-src="images/metamin.jpg" alt="" width="80%" style="border:1px solid black;">
 			</section>
 
 			<!-- Implications for EOR -->
-			<section >
+			<section>
 				<section data-transition="none-out">
 					<h2>And what about salinity?</h2>
-					<img src="images/meta1.png" alt="Smiley face" width="45%">
+					<img src="images/metad1.png" alt="Smiley face" width="55%" style="border:1px solid black;">
 				</section>
 				<section data-transition="none">
 					<h2>And what about salinity?</h2>
-					<img src="images/meta2.png" alt="Smiley face" width="45%">
+					<img src="images/metad2.png" alt="Smiley face" width="55%" style="border:1px solid black;">
 				</section>
 				<section data-transition="none">
 					<h2>And what about salinity?</h2>
-					<img src="images/meta3.png" alt="Smiley face" width="45%">
+					<img src="images/metad3.png" alt="Smiley face" width="55%" style="border:1px solid black;">
 				</section>
 				<section data-transition="none">
 					<h2>And what about salinity?</h2>
-					<img src="images/meta4.png" alt="Smiley face" width="45%">
+					<img src="images/metad4.png" alt="Smiley face" width="55%" style="border:1px solid black;">
 				</section>
 				<section data-transition="none">
 					<h2>And what about salinity?</h2>
-					<img src="images/meta5.png" alt="Smiley face" width="45%">
+					<img src="images/metad5.png" alt="Smiley face" width="55%" style="border:1px solid black;">
 				</section>
 			</section>
 
 			<!-- Hot off the press - EDL ?? -->
+			<!-- section>
+				<h2>Hot off the press!!</h2>
+			</section -->
 
 			<!-- Conclusions -->
 			<section>
@@ -203,9 +261,19 @@
 			</section>
 
 			<!-- Further Reseach -->
+			<section>
+				<h2>Future Work</h2>
+				<ul>
+					<li>Do we observe salt dependence at ...</li>
+					<li>Can we run metadynamic calculations on oil organics?</li>
+					<ul>
+						<li>What degree's of freedom are important?</li>
+					</ul>
+				</ul>
+			</section>
 
 			<!-- Acknowledgements -->
-			<section >
+			<section>
 				<h2>I would like to thank...</h2>
 				<br>
 				<h3 class="fragment">Chris Greenwell</h3>
@@ -220,7 +288,7 @@
 				<h4><a href="http://www.dur.ac.uk/thomas.underwood/" target="_blank">www.dur.ac.uk/thomas.underwood</a></h4>
 				<h4><a href="http:/www.github.com/thomasunderwood/" target="_blank">www.github.com/thomasunderwood</a></h4>
 				<br>
-				<h4><a href="http:/www.github.com/thomasunderwood/" target="_blank">Chris' website</a></h4>
+				<h4><a href="http://www.dur.ac.uk/chris.greenwell/" target="_blank"> www.dur.ac.uk/chris.greenwell</a></h4>
 				<br>
 				<h4><a href="#/start">Back to the start...</a></h4>
 			</section>
@@ -252,7 +320,7 @@
 
 			dependencies: [
 				// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
-				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				// { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 
 				// MathJax
 				{ src: 'plugin/math/math.js', async: true }
