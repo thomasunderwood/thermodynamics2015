@@ -3,20 +3,20 @@ My presentation for the Thermodynamics 2015 conference in Copenhagen.
 
 ** Things left to do: **
 
-- [x]	MD video comparison
-- Metadynamics intro
+- Improve MD video comparison
+- [x] Metadynamics intro
 - [x]	Metadynamics comparison at various salinities
 - [x]	Two potential minima??
--	Backdrops
+-	[x] Backdrops
 -	Finalise text
--	Improve image quality
--	Compress videos for publication
+-	[x] Improve image quality
+-	Compress images and videos for publication
 -	Check weblinks
-- Remove clay section??
+- [x] Remove clay section
 
 ** LICENSE: **
 
-Please ask for permission to use of presentation, images and videos.
+Please ask for permission to use this presentation, or any of its subset images and videos.
 
 ** Acknowledgements: **
 
