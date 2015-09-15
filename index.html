@@ -175,23 +175,23 @@
 			<section data-background="images/backdrops/backdrop.jpg">
 				<section data-transition="none-out">
 					<h2>Metadynamics 101</h2>
-					<img class="stretch" src="images/meta_101/meta1.png" alt="Smiley face" valign="center" style="border:1px solid black;">
+					<img class="stretch" src="images/meta_101/meta1.png" alt="Smiley face" style="border:1px solid black;">
 				</section>
 				<section data-transition="none">
 					<h2>Metadynamics 101</h2>
-					<img class="stretch" src="images/meta_101/meta2.png" alt="Smiley face" valign="center" style="border:1px solid black;">
+					<img class="stretch" src="images/meta_101/meta2.png" alt="Smiley face" style="border:1px solid black;">
 				</section>
 				<section data-transition="none">
 					<h2>Metadynamics 101</h2>
-					<video controls class="stretch" src="videos/metadynamics.mp4" valign="center" style="border:1px solid black;"></video>
+					<video controls class="stretch" src="videos/metadynamics.mp4" style="border:1px solid black;"></video>
 				</section>
 				<section data-transition="none">
 					<h2>Metadynamics 101</h2>
-					<img class="stretch" src="images/meta_101/gaussians.png" alt="Smiley face" valign="center" style="border:1px solid black;">
+					<img class="stretch" src="images/meta_101/gaussians.png" alt="Smiley face" style="border:1px solid black;">
 				</section>
 				<section data-transition="none-in">
 					<h2>Metadynamics 101</h2>
-					<img class="stretch" src="images/meta_101/comparison.png" alt="Smiley face" valign="center" style="border:1px solid black;">
+					<img class="stretch" src="images/meta_101/comparison.png" alt="Smiley face" style="border:1px solid black;">
 				</section>
 			</section>
 
@@ -243,19 +243,37 @@
 				</section>
 			</section>
 
+			<section data-background="images/backdrops/backdrop.jpg">
+				<h2 style="text-align:left; float:left;">End of the road?</h2>
+				<h2 class="fragment" style="text-align:left;float:right;">...not quite...</h2>
+				<img class="fragment" src="images/EDL_expansion.png" alt="Smiley face" width="80%" style="border:1px solid black;">
+			</section>
+
 			<!-- Conclusions -->
 			<section data-background="images/backdrops/backdrop.jpg">
 				<h2>Conclusions</h2>
-			</section>
+				<ul>
+					<li class="fragment">The low-salinity effect with oil droplets is not initially apparent.</li>
+					<li class="fragment">Short range interactions ($<1$ $nm$) of ions and clays are not dependent on salt concentration.</li>
+					<ul>
+						<p class="fragment">Due to ion-ion and ion-clay dispersion forces.</li>
+					</ul>
+					<li class="fragment">Longer range ($>1$ $nm$) effects may be present.</li>
+					<ul>
+						<p class="fragment">Due to electric double layer expansion.</li>
+					</ul>
+				</ul>
+		</section>
 
-			<!-- Further Reseach -->
+			<!-- Further Research -->
 			<section data-background="images/backdrops/backdrop.jpg">
 				<h2>Future Work</h2>
 				<ul>
-					<li>Do we observe salt dependence at ...</li>
-					<li>Can we run metadynamic calculations on oil organics?</li>
+					<li class="fragment">Can we probe the long-range effects of salt concentration?</li>
+					<br>
+					<li class="fragment">Can we run metadynamic calculations on oil organics?</li>
 					<ul>
-						<li>What degree's of freedom are important?</li>
+						<li class="fragment">What degree's of freedom are important?</li>
 					</ul>
 				</ul>
 			</section>
@@ -292,10 +310,10 @@
 			progress: true,					// Display a presentation progress bar
 			slideNumber: false,    	// Display the page number of the current slide
 			history: true,     			// Push each slide change to the browser history
-			center: true,					// Vertical centering of slides
+			center: true,						// Vertical centering of slides
 			loop:false,    				 	// Loop the presentation
 
-			transition: 'slide', // none/fade/slide/convex/concave/zoom
+			transition: 'slide', 		// none/fade/slide/convex/concave/zoom
 			backgroundTransition: 'slide',
 
 			// Factor of the display size that should remain empty around the content
@@ -312,7 +330,6 @@
 				// MathJax
 				{ src: 'plugin/math/math.js', async: true }
 			]
-
 		});
 	</script>
 </body>
